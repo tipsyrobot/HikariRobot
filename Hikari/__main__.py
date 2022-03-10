@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-🌼 I'm an anime-theme management bot [🌼](https://telegra.ph/file/04f66ec701272eb5845ed.jpg)
+🍻 Aku adalah Bot Manage milik group @TIPSYCLUB  [🍻](https://telegra.ph/file/04f66ec701272eb5845ed.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -93,11 +93,11 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="➕️ Add Hikari Robot to your group ➕️", url="t.me/HikariManageRobot?startgroup=true"
+            text="➕️ Add ᴛɪᴘꜱʏ ᴄʟᴜʙ Robot to your group ➕️", url="t.me/tipsywaiters_bot?startgroup=true"
         ),
     ],
     [
-        InlineKeyboardButton(text="Support", url="https://t.me/rexaprivateroom"
+        InlineKeyboardButton(text="Group", url="https://t.me/TIPSYCLUB"
         ),
         InlineKeyboardButton(
             text="TryInline", switch_inline_query_current_chat=""
@@ -113,7 +113,7 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-PRIME_IMG = "https://telegra.ph/file/b9fa4e1360d0a872a3cd5.jpg"
+PRIME_IMG = "https://telegra.ph/file/5b379775d68c5572ac167.png"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @JustRex \
@@ -363,8 +363,8 @@ def hikari_about_callback(update, context):
     query = update.callback_query
     if query.data == "hikari_":
         query.message.edit_text(
-            text="๏ I'm *Hikari Robot*, a powerful group management bot built to help you manage your group easily."
-            "\n• My Owner : @JustRex ."
+            text="🍻 I'm *ᴡᴀɪᴛᴇʀꜱ - ᴛɪᴘꜱʏ ᴄʟᴜʙ*, a powerful group management bot built to help you manage your group easily."
+            "\n• My Owner : @TIPSYCLUB ."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
@@ -439,12 +439,12 @@ def hikari_about_callback(update, context):
     elif query.data == "hikari_support":
         query.message.edit_text(
             text="*๏ Hikari support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Hikari.",
+            "\nJoin My Support Group/Channel for see or report a problem on Waiters.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/rexaprivateroom"),
+                    InlineKeyboardButton(text="Support", url="t.me/TIPSYCLUB"),
                     InlineKeyboardButton(text="Updates", url="https://t.me/tirexgugel"),
                  ],
                  [
@@ -458,8 +458,8 @@ def hikari_about_callback(update, context):
 
     elif query.data == "hikari_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Hikari</b>\n"
-            f"\nHere Developers Making The Hikari Robot",
+            text=f"<b>๏ Credis for ᴡᴀɪᴛᴇʀꜱ - ᴛɪᴘꜱʏ ᴄʟᴜʙ</b>\n"
+            f"\nHere Developers Making The Tipsy Robot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -792,7 +792,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hi friends, I'm alive.",
+                "🍻 Hi friends, I'm alive.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
