@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://telegra.ph/file/7771bb2497ae0cce78ae4.jpg">
+  <img src="https://telegra.ph/file/a36a4ea5b2c30d852dff1.jpg">
 </p>
 
-<h4><p align="center"> HIKARI ROBOT </p></h4>
+<h4><p align="center"> TIPSY ROBOT </p></h4>
 
-<p align="center">Hikari Robot is a modular bot running on python3 with autobots theme and have a lot features.</p>
+<p align="center">Tipsy Robot is a modular bot running on python3 with autobots theme and have a lot features.</p>
 
 <p align="center">
 <a href="https://t.me/HirakiManageRobot"> <img src="https://img.shields.io/badge/Hikari-Robot-blue?&logo=telegram" alt="Hikari on Telegram" /> </a><br>
